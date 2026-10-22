@@ -1,5 +1,33 @@
 # deepseek-reasoning-experiment
 
+测试 https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/ 中对`reasoning_content`是否使用的说明，在DSH中的具体效果
+
+结论：
+
+**在使用原版DSH并打开思考的条件下，即使是在多轮对话中，之前轮次的reasoning内容也会使用并被模型看到**
+
+### api行为验证实验：
+
+![图标](images/1.png)
+多次重复
+![图标](images/2.png)
+
+### DSH发送内容验证实验：
+
+详见`dsh_verify`文件夹
+
+### 实验信息：
+
+实验日期：2026.10.22
+
+测试所用DSH版本：0.2.1-alpha.1-5badb15
+
+测试模型：DeepSeek-V41-Flash （deepseek v4.1 flash 1017）
+
+剩下内容就都是大肥鱼（或者说小肥鱼？）自己说的了
+
+# deepseek-reasoning-experiment
+
 用 DeepSeek 官方 API 复现 DeepSeek Harness（DSH）的调用方式，验证：
 
 1. 多轮对话中，哪些历史 reasoning 会被忽略；
@@ -11,8 +39,6 @@
 > **API key 状态**：`code/config.py` 中的 key 已在实验结束后删除/吊销，不能使用；保留仅为复现代码形状。详见 [SECURITY.md](SECURITY.md)。
 >
 > 入口：[RESULTS.md](RESULTS.md)（数据与结果总览）· [DATA.md](DATA.md)（数据清单）· [REPORT.md](REPORT.md)（完整报告）· [dsh_verify/SOURCE_AUDIT.md](dsh_verify/SOURCE_AUDIT.md)（DSH 发送路径）。
->
-> 彩蛋：[session/README.md](session/README.md) 末尾，写给打开仓库的你。
 
 ## 两种接口
 
@@ -45,7 +71,7 @@ deepseek-reasoning-experiment/
 ├── results/                       主实验 JSON + 汇总 + 实验9并行原始数据
 │   └── exp9_parallel/             10 个 JSONL（10,000 条，约 26MB）+ 概率矩阵 + 统计
 ├── dsh_verify/                    隔离 DSH 实例 + API 代理 + 源码审计 + 抓包验证
-└── session/                       会话导出存放目录（含彩蛋）
+└── session/                       会话导出存放目录
 ```
 
 ## 快速开始

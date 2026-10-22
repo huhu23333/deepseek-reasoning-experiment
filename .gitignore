@@ -1,7 +1,1 @@
-__pycache__/
-*.pyc
-*.pyo
-.tmp/
-.tmp_*
-dsh_verify/home/sessions/**/*.lock
-dsh_verify/workspace/
+__pycache__
