@@ -29,7 +29,7 @@ from ds_client import (
     openai_tool,
 )
 
-RESULTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results")
+RESULTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results")
 
 # --------------------------------------------------------------------------- #
 # Fixed experiment material

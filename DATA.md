@@ -1,6 +1,6 @@
 # 实验数据清单与格式
 
-> `config.py` 中的 API key 已删除/吊销，详见 [SECURITY.md](SECURITY.md)。
+> `code/config.py` 中的 API key 已删除/吊销，详见 [SECURITY.md](SECURITY.md)。
 
 ## 目录总览
 
@@ -10,26 +10,27 @@ deepseek-reasoning-experiment/
 ├── RESULTS.md                    结果总览（数据 + 结论）
 ├── DATA.md                       本文件：数据清单与格式
 ├── SECURITY.md                   key 已删除说明
-├── config.py / ds_client.py      配置与两个接口的最小客户端
-├── probes.py                     共享探针、计费、记录工具
-├── exp1..exp9*.py                实验脚本
-├── exp9_parallel.py              实验9并行版（1000 次/设置）
-├── analyze_results.py            主实验汇总
-├── analyze_exp9_parallel.py      并行数据重分类/统计
-├── run_all.py                    主实验一键运行
-├── requirements.txt
+├── README.md / REPORT.md / RESULTS.md / DATA.md / SECURITY.md
+├── requirements.txt / .gitignore
+├── code/                         Python 代码
+│   ├── config.py / ds_client.py / probes.py
+│   ├── exp1..exp9_intent.py      实验 1–9
+│   ├── exp9_parallel.py          实验 9 并行版（1000 次/设置）
+│   ├── analyze_results.py / analyze_exp9_parallel.py
+│   └── run_all.py / show_exp9_transcripts.py / smoke_test.py
 ├── results/
 │   ├── exp1..exp9_<surface>.json 主实验逐用例记录
 │   ├── summary.json / SUMMARY.md 主实验汇总
 │   ├── exp9_transcripts.md       实验9每个设置一段完整对话
 │   └── exp9_parallel/            1000 次并行复测（原始 JSONL + 矩阵 + 统计）
-└── dsh_verify/                   隔离 DSH 实例 + 代理抓包
-    ├── SOURCE_AUDIT.md           DSH 发送路径源码审计
-    ├── VERIFICATION.md           抓包与会话日志逐块比对
-    ├── proxy.py                  本地 API 代理
-    ├── proxy_logs/               6 个真实请求的 body/meta/response
-    ├── session_6838.jsonl        隔离实例会话日志
-    └── home/                     隔离 DSH_HOME（profile/session 数据）
+├── dsh_verify/                   隔离 DSH 实例 + 代理抓包
+│   ├── SOURCE_AUDIT.md           DSH 发送路径源码审计
+│   ├── VERIFICATION.md           抓包与会话日志逐块比对
+│   ├── proxy.py                  本地 API 代理
+│   ├── proxy_logs/               6 个真实请求的 body/meta/response
+│   ├── session_6838.jsonl        隔离实例会话日志
+│   └── home/                     隔离 DSH_HOME（profile/session 数据）
+└── session/                      会话导出目录（含彩蛋）
 ```
 
 ## 主实验数据（results/exp*_*.json）
@@ -121,10 +122,10 @@ deepseek-reasoning-experiment/
 ## 复算命令
 
 ```bash
-python3 analyze_results.py          # 重新生成 results/summary.json 与 SUMMARY.md
-python3 analyze_exp9_parallel.py    # 重新生成 refined 矩阵与 statistics.md
-python3 exp9_parallel.py --trials 1000 --concurrency 300 --surface both  # 重跑并行实验
-python3 dsh_verify/verify_capture.py  # 重新比对抓包与会话日志
+python3 code/analyze_results.py          # 重新生成 results/summary.json 与 SUMMARY.md
+python3 code/analyze_exp9_parallel.py    # 重新生成 refined 矩阵与 statistics.md
+python3 code/exp9_parallel.py --trials 1000 --concurrency 300 --surface both  # 重跑并行实验
+python3 dsh_verify/verify_capture.py      # 重新比对抓包与会话日志
 ```
 
 ## 说明

@@ -1,6 +1,6 @@
 # 实验结果总览（数据 + 结论）
 
-> **API key 已删除/吊销**：`config.py` 中的 key 不可用，详见 [SECURITY.md](SECURITY.md)。
+> **API key 已删除/吊销**：`code/config.py` 中的 key 不可用，详见 [SECURITY.md](SECURITY.md)。
 
 ## 0. 环境与总量
 
@@ -147,9 +147,9 @@
 cd deepseek-reasoning-experiment
 pip install -r requirements.txt
 export DEEPSEEK_API_KEY=你的有效key
-python3 run_all.py
-python3 exp9_parallel.py --trials 1000 --concurrency 300 --surface both
-python3 analyze_exp9_parallel.py
+python3 code/run_all.py
+python3 code/exp9_parallel.py --trials 1000 --concurrency 300 --surface both
+python3 code/analyze_exp9_parallel.py
 python3 dsh_verify/verify_capture.py
 ```
 

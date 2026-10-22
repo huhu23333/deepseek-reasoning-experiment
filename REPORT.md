@@ -9,6 +9,7 @@
 - 费用 = API 返回的 usage × 官方价格；所有原始 JSON 在 `results/`
 - 主实验发出 272 个 API 请求（另有 36 条汇总记录）：输入 190,754 tokens，输出 36,339 tokens，估算费用约 **$0.0574**（约 ¥0.41）
 - 另有一次实验 9 的 10,000 次并行复测（5 设置 × 2 接口 × 1000）：10,000 请求、0 失败、约 **$1.064**（附录十八）
+- 所有 Python 脚本位于 `code/` 目录；原始数据在 `results/`；DSH 验证在 `dsh_verify/`；会话存档与彩蛋在 `session/`
 
 ## 一、结论摘要
 
@@ -354,15 +355,15 @@ DSH 的 `dsh-llm-deepseek` 走 Anthropic Messages，并且对**每个**带 reaso
 3. **行为测试有随机性**：模型可能拒绝复述 secret；结论以 token 计数为主、行为为佐证。
 4. **范围**：仅 `deepseek-flash`、`reasoning_effort=high`、高峰时段；`deepseek-v4-pro` 未测。
 5. **synthetic reasoning 块**用于精确 token 对照；真实 reasoning 长度不同，但服务端处理机制相同（无签名校验）。
-6. **API key 已删除**：仓库 `config.py` 中保留的是实验用 key，已在实验结束后删除/吊销，不能使用；见 `SECURITY.md`。
+6. **API key 已删除**：仓库 `code/config.py` 中保留的是实验用 key，已在实验结束后删除/吊销，不能使用；见 `SECURITY.md`。
 
 ## 十六、复现
 
 ```bash
 cd deepseek-reasoning-experiment
 pip install -r requirements.txt
-export DEEPSEEK_API_KEY=sk-...   # config.py 中也内置了本次的 key
-python3 run_all.py
+export DEEPSEEK_API_KEY=你的有效key   # 实验 key 在 code/config.py 中已删除
+python3 code/run_all.py
 ```
 
 产出：`results/exp*_{anthropic,openai}.json`（原始请求/响应摘要与 usage）、`results/summary.json`（机器可读）、
