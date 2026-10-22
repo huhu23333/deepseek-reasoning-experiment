@@ -1,0 +1,279 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792670015492,
+      "cwd": "/home/huhu233/otherProject/deepseek-harness",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 22,
+        "val": "workspace-write"
+      },
+      "title": {
+        "ver": 1,
+        "seq": 22,
+        "val": "只回复 OK 测试"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 22,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "只回复 OK，不要调用工具。"
+          },
+          "count": 1,
+          "lastSeq": 8
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 22,
+        "val": {}
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 22,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 6,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 20
+          },
+          "lastTurn": 1
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 22,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 11021,
+            "outputTokens": 2,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 11021,
+              "outputTokens": 2,
+              "cacheReadTokens": 0,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 22,
+        "val": {
+          "surfaceTokens": 6790,
+          "contextWindow": 1000000,
+          "pressureTokens": 11021,
+          "sampledSurfaceTokens": 6777
+        }
+      },
+      "contextBreakdown": {
+        "ver": 5,
+        "seq": 22,
+        "val": {
+          "nodes": [
+            {
+              "seq": 7,
+              "heuristicTokens": 656,
+              "system": true
+            },
+            {
+              "seq": 8,
+              "heuristicTokens": 12,
+              "system": false
+            },
+            {
+              "seq": 9,
+              "heuristicTokens": 4441,
+              "system": false
+            },
+            {
+              "seq": 10,
+              "heuristicTokens": 129,
+              "system": false
+            },
+            {
+              "seq": 11,
+              "heuristicTokens": 1539,
+              "system": false
+            },
+            {
+              "seq": 19,
+              "heuristicTokens": 13,
+              "system": false
+            }
+          ],
+          "breakdown": {
+            "systemTokens": 656,
+            "toolsTokens": 4753,
+            "messageTokens": 6134
+          }
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 22,
+        "val": {
+          "turns": 1,
+          "steps": 1,
+          "llmMs": 1584,
+          "toolMs": 0,
+          "ttftMs": 1556,
+          "ttftSteps": 1,
+          "decodeMs": 28,
+          "decodeTokens": 2,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "只回复 OK，不要调用工具。",
+              "response": "OK"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 22,
+        "val": null
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "subagentCatalog": {
+        "ver": 3,
+        "seq": 22,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 22,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 22,
+        "val": {}
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 22,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 22,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "lastMessageTime": 1792670017166,
+          "lastInjectionTime": null,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 22,
+        "val": null
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 22,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 22,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792670015585
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 22,
+        "val": null
+      }
+    }
+  }
+}

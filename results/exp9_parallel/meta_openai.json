@@ -1,0 +1,73 @@
+{
+  "surface": "openai",
+  "system": "exp9-parallel-1754d3254081",
+  "prompt": "请先在思考里算一下 1+1 等于几，然后回答。最终回答只输出数字。（会话标记 239869）",
+  "reasoning": "We need answer Chinese. Need comply: think calculate 1+1, final only number. Need not show reasoning. \"请先在思考里算一下...最终回答只输出数字\" So final only digit.",
+  "answer": "2",
+  "counts": {
+    "no_intent": {
+      "exhibition": 10,
+      "cooking": 0,
+      "outdoor": 974,
+      "other": 16
+    },
+    "intent_exhibition": {
+      "exhibition": 982,
+      "cooking": 0,
+      "outdoor": 0,
+      "other": 18
+    },
+    "intent_cooking": {
+      "exhibition": 0,
+      "cooking": 959,
+      "outdoor": 3,
+      "other": 38
+    },
+    "intent_cooking_no_tools": {
+      "exhibition": 5,
+      "cooking": 1,
+      "outdoor": 982,
+      "other": 12
+    },
+    "intent_cooking_thinking_off": {
+      "exhibition": 108,
+      "cooking": 0,
+      "outdoor": 837,
+      "other": 55
+    }
+  },
+  "failures": {
+    "no_intent": 0,
+    "intent_exhibition": 0,
+    "intent_cooking": 0,
+    "intent_cooking_no_tools": 0,
+    "intent_cooking_thinking_off": 0
+  },
+  "usage_totals": {
+    "no_intent": {
+      "input": 434000,
+      "output": 112960,
+      "hit": 254976
+    },
+    "intent_exhibition": {
+      "input": 462000,
+      "output": 217723,
+      "hit": 256000
+    },
+    "intent_cooking": {
+      "input": 466000,
+      "output": 199745,
+      "hit": 256000
+    },
+    "intent_cooking_no_tools": {
+      "input": 93000,
+      "output": 109556,
+      "hit": 0
+    },
+    "intent_cooking_thinking_off": {
+      "input": 365000,
+      "output": 16141,
+      "hit": 127616
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792670032301,
+      "cwd": "/home/huhu233/otherProject/deepseek-harness",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 39,
+        "val": "workspace-write"
+      },
+      "title": {
+        "ver": 1,
+        "seq": 39,
+        "val": "随机串后执行 date 命令"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 39,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "请先在你的思考/reasoning 中生成一个 8 位十六进制随机串，按格式写下：暗号=XXXXXXXX。然后调用 bash 工具执行 date 命令；最后只回复 OK。最终回答不要提到暗号。"
+          },
+          "count": 2,
+          "lastSeq": 33
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 39,
+        "val": {}
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 39,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 32,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 37
+          },
+          "lastTurn": 2
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 39,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 6275,
+            "outputTokens": 172,
+            "cacheReadTokens": 27264,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 245,
+              "outputTokens": 43,
+              "cacheReadTokens": 11008,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 39,
+        "val": {
+          "surfaceTokens": 6971,
+          "contextWindow": 1000000,
+          "pressureTokens": 11253,
+          "sampledSurfaceTokens": 6932
+        }
+      },
+      "contextBreakdown": {
+        "ver": 5,
+        "seq": 39,
+        "val": {
+          "nodes": [
+            {
+              "seq": 7,
+              "heuristicTokens": 656,
+              "system": true
+            },
+            {
+              "seq": 8,
+              "heuristicTokens": 32,
+              "system": false
+            },
+            {
+              "seq": 9,
+              "heuristicTokens": 4441,
+              "system": false
+            },
+            {
+              "seq": 10,
+              "heuristicTokens": 129,
+              "system": false
+            },
+            {
+              "seq": 11,
+              "heuristicTokens": 1539,
+              "system": false
+            },
+            {
+              "seq": 19,
+              "heuristicTokens": 87,
+              "system": false
+            },
+            {
+              "seq": 21,
+              "heuristicTokens": 16,
+              "system": false
+            },
+            {
+              "seq": 25,
+              "heuristicTokens": 13,
+              "system": false
+            },
+            {
+              "seq": 33,
+              "heuristicTokens": 19,
+              "system": false
+            },
+            {
+              "seq": 36,
+              "heuristicTokens": 39,
+              "system": false
+            }
+          ],
+          "breakdown": {
+            "systemTokens": 656,
+            "toolsTokens": 4753,
+            "messageTokens": 6315
+          }
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 39,
+        "val": {
+          "turns": 2,
+          "steps": 3,
+          "llmMs": 4069,
+          "toolMs": 49,
+          "ttftMs": 3621,
+          "ttftSteps": 3,
+          "decodeMs": 448,
+          "decodeTokens": 172,
+          "lastTurn": 2,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "请先在你的思考/reasoning 中生成一个 8 位十六进制随机串，按格式写下：暗号=XXXXX…",
+              "response": "OK"
+            },
+            {
+              "turn": 2,
+              "seq": 30,
+              "prompt": "请输出你上一轮思考中生成的那个 8 位十六进制暗号；如果看不到就输出 UNKNOWN。",
+              "response": "3F9A2C7E"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 39,
+        "val": null
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "subagentCatalog": {
+        "ver": 3,
+        "seq": 39,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 39,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 39,
+        "val": {}
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 39,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 39,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "lastMessageTime": 1792670038341,
+          "lastInjectionTime": null,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 39,
+        "val": null
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 39,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 39,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792670036847
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 39,
+        "val": null
+      }
+    }
+  }
+}

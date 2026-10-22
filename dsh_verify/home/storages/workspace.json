@@ -1,0 +1,29 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "workspaceIds": [
+      "3aacccc6-ad43-4612-a59e-0c600aa2f965"
+    ],
+    "archivedSessionIds": [],
+    "pinnedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "3aacccc6-ad43-4612-a59e-0c600aa2f965": {
+        "path": "/home/huhu233/otherProject/deepseek-harness",
+        "title": "deepseek-harness",
+        "sessionIds": [
+          "session-b33367e1-0bf4-4008-9f0e-91b7d933cb5b",
+          "session-6838d456-e714-47be-b1cb-9f78f98f8a9a",
+          "session-d32bf185-1b51-4ab1-9cb5-730a83178dae"
+        ],
+        "createdAt": "2026-10-22T11:53:52.301Z",
+        "updatedAt": "2026-10-22T11:57:40.776Z"
+      }
+    }
+  }
+}

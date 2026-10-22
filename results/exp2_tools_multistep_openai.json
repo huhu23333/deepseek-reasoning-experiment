@@ -1,0 +1,308 @@
+{
+  "experiment": "exp2_tools_multistep",
+  "surface": "openai",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:33:42.624208+08:00",
+  "cases": [
+    {
+      "name": "step1",
+      "notes": "",
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "input": {
+            "city": "Paris",
+            "date": "2025-06-10"
+          }
+        }
+      ],
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 388,
+        "uncached_input_tokens": 388,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 433,
+        "reasoning_tokens": 373
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001164,
+        "input_cache_hit": 0.0,
+        "output": 0.0005196,
+        "total": 0.000636
+      },
+      "stop_reason": "tool_calls",
+      "text": "",
+      "reasoning_chars": 1516
+    },
+    {
+      "name": "step2",
+      "notes": "",
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "input": {
+            "city": "Hangzhou",
+            "date": "2025-06-10"
+          }
+        }
+      ],
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 842,
+        "uncached_input_tokens": 202,
+        "cache_read_input_tokens": 640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 62,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.06e-05,
+        "input_cache_hit": 3.84e-06,
+        "output": 7.44e-05,
+        "total": 0.00013884
+      },
+      "stop_reason": "tool_calls",
+      "text": "",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "step3",
+      "notes": "",
+      "tool_calls": [],
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 925,
+        "uncached_input_tokens": 157,
+        "cache_read_input_tokens": 768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.71e-05,
+        "input_cache_hit": 4.61e-06,
+        "output": 3.36e-05,
+        "total": 8.531e-05
+      },
+      "stop_reason": "stop",
+      "text": "两座城市明天（2025-06-10）天气相同：巴黎和杭州均为晴天、22°C、微风。",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "loop_summary",
+      "notes": "",
+      "tool_steps": 2,
+      "final_text": "两座城市明天（2025-06-10）天气相同：巴黎和杭州均为晴天、22°C、微风。"
+    },
+    {
+      "name": "followup_turn_with_tools_replaying_reasoning",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 971,
+        "uncached_input_tokens": 203,
+        "cache_read_input_tokens": 768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35,
+        "reasoning_tokens": 16
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.09e-05,
+        "input_cache_hit": 4.61e-06,
+        "output": 4.2e-05,
+        "total": 0.00010751
+      },
+      "stop_reason": "stop",
+      "text": "两座城市气温相同（均为22°C），所以没有哪一座更热。",
+      "reasoning_chars": 76
+    },
+    {
+      "name": "followup_turn_with_tools_dropping_reasoning",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 598,
+        "uncached_input_tokens": 598,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33,
+        "reasoning_tokens": 13
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001794,
+        "input_cache_hit": 0.0,
+        "output": 3.96e-05,
+        "total": 0.000219
+      },
+      "stop_reason": "stop",
+      "text": "两座城市气温相同，都是 22°C，因此没有哪一座更热。",
+      "reasoning_chars": 41
+    },
+    {
+      "name": "drop_step1_reasoning_warm",
+      "notes": "same prefix, server retains the reasoning for a fresh call id",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 842,
+        "uncached_input_tokens": 202,
+        "cache_read_input_tokens": 640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 68,
+        "reasoning_tokens": 6
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.06e-05,
+        "input_cache_hit": 3.84e-06,
+        "output": 8.16e-05,
+        "total": 0.00014604
+      },
+      "stop_reason": "tool_calls",
+      "text": "",
+      "reasoning_chars": 27
+    },
+    {
+      "name": "drop_step1_reasoning_cold_real_id",
+      "notes": "different system prefix but a real server-issued tool id",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 846,
+        "uncached_input_tokens": 846,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 80,
+        "reasoning_tokens": 18
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0002538,
+        "input_cache_hit": 0.0,
+        "output": 9.6e-05,
+        "total": 0.0003498
+      },
+      "stop_reason": "tool_calls",
+      "text": "",
+      "reasoning_chars": 61
+    },
+    {
+      "name": "fabricated_tool_call_missing_reasoning",
+      "notes": "documented 400 case: server cannot recover the reasoning",
+      "ok": false,
+      "status": 400,
+      "error": "{\"error\":{\"message\":\"The `reasoning_content` in the thinking mode must be passed back to the API. (request_id: 27348b4e-8230-4700-ad74-022b9db20518)\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "name": "fabricated_tool_call_with_reasoning",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 441,
+        "uncached_input_tokens": 441,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 142,
+        "reasoning_tokens": 74
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001323,
+        "input_cache_hit": 0.0,
+        "output": 0.0001704,
+        "total": 0.0003027
+      },
+      "stop_reason": "stop",
+      "text": "Here's the forecast for **Paris**:\n\n- ☀️ **Sunny**\n- 🌡️ **22°C**\n- 💨 **Light wind**\n\nNote: you didn't specify a date, so I checked today's date (2026-10-23). Let me know if you'd like a different day.",
+      "reasoning_chars": 286
+    },
+    {
+      "name": "fabricated_tool_call_empty_reasoning",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 430,
+        "uncached_input_tokens": 430,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 152,
+        "reasoning_tokens": 64
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.000129,
+        "input_cache_hit": 0.0,
+        "output": 0.0001824,
+        "total": 0.0003114
+      },
+      "stop_reason": "stop",
+      "text": "Here's what I got for Paris:\n\n**Paris — 2026-10-23: Sunny, 22 °C, light wind.**\n\nOne note: the `get_weather` tool requires a specific date, and I don't actually know today's date, so I picked 2026-10-23 as a placeholder. If you tell me the date you care about, I'll re-run it for that day.",
+      "reasoning_chars": 264
+    },
+    {
+      "name": "plain_turn_with_tools_missing_reasoning",
+      "notes": "tools present, no tool call in history, reasoning omitted",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 360,
+        "uncached_input_tokens": 360,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31,
+        "reasoning_tokens": 29
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.000108,
+        "input_cache_hit": 0.0,
+        "output": 3.72e-05,
+        "total": 0.0001452
+      },
+      "stop_reason": "stop",
+      "text": "4",
+      "reasoning_chars": 108
+    },
+    {
+      "name": "tools_control",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 352,
+        "uncached_input_tokens": 352,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001056,
+        "input_cache_hit": 0.0,
+        "output": 2.4e-06,
+        "total": 0.000108
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "tools_large_reasoning",
+      "notes": "",
+      "delta_input_tokens": 3001,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 3353,
+        "uncached_input_tokens": 3097,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0009291,
+        "input_cache_hit": 1.54e-06,
+        "output": 2.4e-06,
+        "total": 0.00093304
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    }
+  ]
+}

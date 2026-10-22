@@ -1,0 +1,16 @@
+status 200
+Server: openresty
+Content-Type: text/event-stream; charset=utf-8
+vary: accept-encoding, origin, access-control-request-method, access-control-request-headers
+content-encoding: gzip
+access-control-allow-credentials: true
+x-ds-trace-id: caaecd97ce6c56a6d8be3caa266fe283
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Transfer-Encoding: chunked
+Connection: keep-alive
+Date: Thu, 22 Oct 2026 11:53:35 GMT
+EO-LOG-UUID: 748899712348785559
+EO-Cache-Status: MISS
+

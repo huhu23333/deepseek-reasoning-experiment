@@ -1,0 +1,1198 @@
+{
+  "experiment": "exp8_reasoning_tamper",
+  "surface": "anthropic",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": false,
+  "generated_at": "2026-10-22T18:56:53.845477+08:00",
+  "cases": [
+    {
+      "name": "turn1_generate_canary",
+      "notes": "canary A only in reasoning; visible answer is just a number",
+      "canary_original": "A3F09B7C",
+      "canary_modified": "DFB5C3A4",
+      "never_seen": "C2680CCF",
+      "reasoning_chars": 277,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 110,
+        "uncached_input_tokens": 110,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 166,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.65e-05,
+        "input_cache_hit": 0.0,
+        "output": 9.96e-05,
+        "total": 0.0001161
+      },
+      "stop_reason": "end_turn",
+      "text": "2"
+    },
+    {
+      "name": "original_with_tools_step1",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 636,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 191,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 9.54e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001146,
+        "total": 0.00021
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 892
+    },
+    {
+      "name": "original_with_tools_step2",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "A3F09B7C",
+        "DFB5C3A4",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 252,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 87,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.78e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 5.22e-05,
+        "total": 9.115e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 306
+    },
+    {
+      "name": "original_with_tools_step3",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 252,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 151,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.78e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 9.06e-05,
+        "total": 0.00012955
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 610
+    },
+    {
+      "name": "original_with_tools_step4",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 252,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 119,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.78e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 7.14e-05,
+        "total": 0.00011035
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 443
+    },
+    {
+      "name": "original_with_tools_step5",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 252,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.78e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 3e-05,
+        "total": 6.895e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 173
+    },
+    {
+      "name": "original_with_tools_step6",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 636,
+        "uncached_input_tokens": 252,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 75,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.78e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 4.5e-05,
+        "total": 8.395e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 222
+    },
+    {
+      "name": "original_with_tools_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 6,
+      "trials": 6,
+      "expected": "A3F09B7C",
+      "answers": [
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "A3F09B7C",
+            "DFB5C3A4",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "name": "modified_with_tools_step1",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 161,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 9.66e-05,
+        "total": 0.0001357
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 667
+    },
+    {
+      "name": "modified_with_tools_step2",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "C2680CCF",
+        "A3F09B7C",
+        "DFB5C3A4"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 89,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 5.34e-05,
+        "total": 9.25e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 306
+    },
+    {
+      "name": "modified_with_tools_step3",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 72,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 4.32e-05,
+        "total": 8.23e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 263
+    },
+    {
+      "name": "modified_with_tools_step4",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 2.1e-05,
+        "total": 6.01e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 91
+    },
+    {
+      "name": "modified_with_tools_step5",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 74,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 4.44e-05,
+        "total": 8.35e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 280
+    },
+    {
+      "name": "modified_with_tools_step6",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "DFB5C3A4",
+        "C2680CCF",
+        "A3F09B7C"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 57,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 3.42e-05,
+        "total": 7.33e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 167
+    },
+    {
+      "name": "modified_with_tools_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 6,
+      "trials": 6,
+      "expected": "DFB5C3A4",
+      "answers": [
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "C2680CCF",
+            "A3F09B7C",
+            "DFB5C3A4"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "DFB5C3A4",
+            "C2680CCF",
+            "A3F09B7C"
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "name": "stripped_with_tools_step1",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "A3F09B7C",
+        "DFB5C3A4",
+        "C2680CCF"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 177,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001062,
+        "total": 0.00013937
+      },
+      "stop_reason": "end_turn",
+      "text": "我上一轮的 thinking/reasoning 中没有生成任何 8 位十六进制串，所以候选里的三个串都不是我写下的。",
+      "reasoning_chars": 667
+    },
+    {
+      "name": "stripped_with_tools_step2",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 187,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001122,
+        "total": 0.00014537
+      },
+      "stop_reason": "end_turn",
+      "text": "上一轮我的思考中没有出现任何 8 位十六进制串（也没有生成过），因此候选中的三个串都不能确认出现过。",
+      "reasoning_chars": 757
+    },
+    {
+      "name": "stripped_with_tools_step3",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 304,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001824,
+        "total": 0.00021557
+      },
+      "stop_reason": "end_turn",
+      "text": "我无法确认——上一轮的 reasoning 中没有生成或保留任何 8 位十六进制串，因此三个候选都无法验证。",
+      "reasoning_chars": 1176
+    },
+    {
+      "name": "stripped_with_tools_step4",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 196,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001176,
+        "total": 0.00015077
+      },
+      "stop_reason": "end_turn",
+      "text": "我上一轮的 reasoning 中并没有出现过任何 8 位十六进制串，因此这三个候选都不是我实际生成的；我不能凭猜测选一个。",
+      "reasoning_chars": 737
+    },
+    {
+      "name": "stripped_with_tools_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 0,
+      "trials": 4,
+      "expected": null,
+      "answers": [
+        {
+          "pick": "none",
+          "order": [
+            "A3F09B7C",
+            "DFB5C3A4",
+            "C2680CCF"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "modified_no_tools_step1",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 174,
+        "uncached_input_tokens": 174,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 512,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.61e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003072,
+        "total": 0.0003333
+      },
+      "stop_reason": "max_tokens",
+      "text": "",
+      "reasoning_chars": 2440
+    },
+    {
+      "name": "modified_no_tools_step2",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "A3F09B7C",
+        "DFB5C3A4",
+        "C2680CCF"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 174,
+        "uncached_input_tokens": 174,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 504,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.61e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003024,
+        "total": 0.0003285
+      },
+      "stop_reason": "end_turn",
+      "text": "无法提供",
+      "reasoning_chars": 1016
+    },
+    {
+      "name": "modified_no_tools_step3",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "DFB5C3A4",
+        "C2680CCF",
+        "A3F09B7C"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 174,
+        "uncached_input_tokens": 174,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 512,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.61e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003072,
+        "total": 0.0003333
+      },
+      "stop_reason": "max_tokens",
+      "text": "",
+      "reasoning_chars": 2446
+    },
+    {
+      "name": "modified_no_tools_step4",
+      "notes": "",
+      "pick": "none",
+      "option_order": [
+        "A3F09B7C",
+        "DFB5C3A4",
+        "C2680CCF"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 174,
+        "uncached_input_tokens": 174,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 512,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.61e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003072,
+        "total": 0.0003333
+      },
+      "stop_reason": "max_tokens",
+      "text": "",
+      "reasoning_chars": 2115
+    },
+    {
+      "name": "modified_no_tools_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 0,
+      "trials": 4,
+      "expected": null,
+      "answers": [
+        {
+          "pick": "none",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "A3F09B7C",
+            "DFB5C3A4",
+            "C2680CCF"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "DFB5C3A4",
+            "C2680CCF",
+            "A3F09B7C"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "none",
+          "order": [
+            "A3F09B7C",
+            "DFB5C3A4",
+            "C2680CCF"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "modified_thinking_off_step1",
+      "notes": "",
+      "pick": "C2680CCF",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 446,
+        "uncached_input_tokens": 446,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.69e-05,
+        "input_cache_hit": 0.0,
+        "output": 3e-06,
+        "total": 6.99e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "C2680CCF",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "modified_thinking_off_step2",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 446,
+        "uncached_input_tokens": 190,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.85e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 4.2e-06,
+        "total": 3.347e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "modified_thinking_off_step3",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "C2680CCF",
+        "DFB5C3A4",
+        "A3F09B7C"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 446,
+        "uncached_input_tokens": 190,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.85e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 4.2e-06,
+        "total": 3.347e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "modified_thinking_off_step4",
+      "notes": "",
+      "pick": "A3F09B7C",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 446,
+        "uncached_input_tokens": 190,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.85e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 4.2e-06,
+        "total": 3.347e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "A3F09B7C",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "modified_thinking_off_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 0,
+      "trials": 4,
+      "expected": null,
+      "answers": [
+        {
+          "pick": "C2680CCF",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "C2680CCF",
+            "DFB5C3A4",
+            "A3F09B7C"
+          ],
+          "correct": false
+        },
+        {
+          "pick": "A3F09B7C",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": false
+        }
+      ]
+    },
+    {
+      "name": "modified_no_signature_step1",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 3.78e-05,
+        "total": 7.69e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 191
+    },
+    {
+      "name": "modified_no_signature_step2",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "A3F09B7C",
+        "C2680CCF",
+        "DFB5C3A4"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 2.94e-05,
+        "total": 6.85e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 175
+    },
+    {
+      "name": "modified_no_signature_step3",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "A3F09B7C",
+        "DFB5C3A4",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 226,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 0.0001356,
+        "total": 0.0001747
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 810
+    },
+    {
+      "name": "modified_no_signature_step4",
+      "notes": "",
+      "pick": "DFB5C3A4",
+      "option_order": [
+        "DFB5C3A4",
+        "A3F09B7C",
+        "C2680CCF"
+      ],
+      "correct": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 637,
+        "uncached_input_tokens": 253,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 163,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.795e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 9.78e-05,
+        "total": 0.0001369
+      },
+      "stop_reason": "end_turn",
+      "text": "DFB5C3A4",
+      "reasoning_chars": 524
+    },
+    {
+      "name": "modified_no_signature_summary",
+      "notes": "forced choice; option order randomized each trial",
+      "hits": 4,
+      "trials": 4,
+      "expected": "DFB5C3A4",
+      "answers": [
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "A3F09B7C",
+            "C2680CCF",
+            "DFB5C3A4"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "A3F09B7C",
+            "DFB5C3A4",
+            "C2680CCF"
+          ],
+          "correct": true
+        },
+        {
+          "pick": "DFB5C3A4",
+          "order": [
+            "DFB5C3A4",
+            "A3F09B7C",
+            "C2680CCF"
+          ],
+          "correct": true
+        }
+      ]
+    },
+    {
+      "name": "token_sanity_original",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 592,
+        "uncached_input_tokens": 208,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 39,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.12e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 2.34e-05,
+        "total": 5.575e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "4",
+      "reasoning_chars": 151
+    },
+    {
+      "name": "token_sanity_modified",
+      "notes": "",
+      "delta_vs_original": 1,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 593,
+        "uncached_input_tokens": 209,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 80,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.135e-05,
+        "input_cache_hit": 1.15e-06,
+        "output": 4.8e-05,
+        "total": 8.05e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "4",
+      "reasoning_chars": 370
+    }
+  ]
+}

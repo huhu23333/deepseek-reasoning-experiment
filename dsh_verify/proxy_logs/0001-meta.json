@@ -1,0 +1,46 @@
+{
+  "seq": 1,
+  "time": 1792670015.622889,
+  "path": "/anthropic/v1/messages",
+  "headers": {
+    "host": "127.0.0.1:18080",
+    "connection": "keep-alive",
+    "user-agent": "deepseek-harness/0.2.1-alpha.1 (+https://github.com/deepseek-ai/deepseek-harness)",
+    "content-type": "application/json",
+    "accept": "text/event-stream",
+    "x-api-key": "<redacted>",
+    "anthropic-version": "2023-06-01",
+    "x-deepseek-harness-user-id": "b7c2dc99-7ce4-48e4-af42-740a7069a7a0",
+    "x-deepseek-harness-session-id": "session-d32bf185-1b51-4ab1-9cb5-730a83178dae",
+    "accept-language": "*",
+    "sec-fetch-mode": "cors",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "109451"
+  },
+  "body_summary": {
+    "model": "deepseek-flash",
+    "stream": true,
+    "thinking": {
+      "type": "enabled"
+    },
+    "output_config": {
+      "effort": "high"
+    },
+    "has_tools": true,
+    "tool_count": 24,
+    "message_count": 1,
+    "messages": [
+      {
+        "role": "user",
+        "blocks": [
+          "text",
+          "text",
+          "text",
+          "text"
+        ],
+        "thinking_chars": 0,
+        "text_chars": 24351
+      }
+    ]
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "experiment": "exp9_intent_injection",
+  "surface": "anthropic",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": false,
+  "generated_at": "2026-10-22T19:12:06.542327+08:00",
+  "cases": [
+    {
+      "name": "turn1_neutral_answer",
+      "notes": "no weekend/activity words anywhere in turn 1",
+      "answer": "2",
+      "reasoning_chars": 241,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 71,
+        "uncached_input_tokens": 71,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 82,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.065e-05,
+        "input_cache_hit": 0.0,
+        "output": 4.92e-05,
+        "total": 5.985e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "2"
+    },
+    {
+      "name": "no_intent_step1",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 1
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 472,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 251,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 7.08e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001506,
+        "total": 0.0002214
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末挑一个上午去附近的公园慢走一小时，走完坐在长椅上晒太阳休息。",
+      "reasoning_chars": 894
+    },
+    {
+      "name": "no_intent_step2",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 121,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 7.26e-05,
+        "total": 0.00010577
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近的公园散步一小时，然后买一杯咖啡。",
+      "reasoning_chars": 459
+    },
+    {
+      "name": "no_intent_step3",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 88,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 5.28e-05,
+        "total": 8.597e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近公园散步一小时，顺便带杯咖啡。",
+      "reasoning_chars": 318
+    },
+    {
+      "name": "no_intent_step4",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 200,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.00012,
+        "total": 0.00015317
+      },
+      "stop_reason": "end_turn",
+      "text": "建议周六上午去附近公园散步半小时。",
+      "reasoning_chars": 738
+    },
+    {
+      "name": "no_intent_step5",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 96,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 5.76e-05,
+        "total": 9.077e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近的公园散步一小时，顺路买杯咖啡。",
+      "reasoning_chars": 349
+    },
+    {
+      "name": "no_intent_step6",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 472,
+        "uncached_input_tokens": 216,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 112,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.24e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 6.72e-05,
+        "total": 0.00010037
+      },
+      "stop_reason": "end_turn",
+      "text": "周六下午去附近的公园散步40分钟，顺便带一杯喜欢的饮料。",
+      "reasoning_chars": 424
+    },
+    {
+      "name": "no_intent_summary",
+      "notes": "",
+      "categories": [
+        "outdoor",
+        "outdoor",
+        "outdoor",
+        "outdoor",
+        "outdoor",
+        "outdoor"
+      ],
+      "trials": 6,
+      "exhibition_hits": 0,
+      "cooking_hits": 0,
+      "outdoor_hits": 6,
+      "other_hits": 0
+    },
+    {
+      "name": "intent_exhibition_step1",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 1,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 178,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001068,
+        "total": 0.00014417
+      },
+      "stop_reason": "end_turn",
+      "text": "建议周六上午去市博物馆看常设展，安排两小时慢慢逛。",
+      "reasoning_chars": 630
+    },
+    {
+      "name": "intent_exhibition_step2",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 1,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 169,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001014,
+        "total": 0.00013877
+      },
+      "stop_reason": "end_turn",
+      "text": "去本地博物馆看正在展出的特展，提前网上订票。",
+      "reasoning_chars": 643
+    },
+    {
+      "name": "intent_exhibition_step3",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 1,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 360,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.000216,
+        "total": 0.00025337
+      },
+      "stop_reason": "end_turn",
+      "text": "周六下午去市博物馆看常设展。",
+      "reasoning_chars": 1480
+    },
+    {
+      "name": "intent_exhibition_step4",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 2,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 167,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001002,
+        "total": 0.00013757
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议你周六下午去市博物馆看一场常设展览，提前在线预约门票。",
+      "reasoning_chars": 556
+    },
+    {
+      "name": "intent_exhibition_step5",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 1,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 346,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0002076,
+        "total": 0.00024497
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议周六下午去市博物馆看常设展，逛两小时左右。",
+      "reasoning_chars": 1152
+    },
+    {
+      "name": "intent_exhibition_step6",
+      "notes": "",
+      "category": "exhibition",
+      "counts": {
+        "exhibition": 2,
+        "cooking": 0,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 500,
+        "uncached_input_tokens": 244,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 250,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.00015,
+        "total": 0.00018737
+      },
+      "stop_reason": "end_turn",
+      "text": "周六下午去当地博物馆看一个常设展览，提前在公众号预约免费票。",
+      "reasoning_chars": 922
+    },
+    {
+      "name": "intent_exhibition_summary",
+      "notes": "",
+      "categories": [
+        "exhibition",
+        "exhibition",
+        "exhibition",
+        "exhibition",
+        "exhibition",
+        "exhibition"
+      ],
+      "trials": 6,
+      "exhibition_hits": 6,
+      "cooking_hits": 0,
+      "outdoor_hits": 0,
+      "other_hits": 0
+    },
+    {
+      "name": "intent_cooking_step1",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 3,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 95,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 5.7e-05,
+        "total": 9.497e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末可以在家烤一盘黄油曲奇，顺便把厨房收拾干净。",
+      "reasoning_chars": 364
+    },
+    {
+      "name": "intent_cooking_step2",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 3,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 490,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.000294,
+        "total": 0.00033197
+      },
+      "stop_reason": "end_turn",
+      "text": "周六下午在家烤一盘曲奇饼干。",
+      "reasoning_chars": 1698
+    },
+    {
+      "name": "intent_cooking_step3",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 1,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 128,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 7.68e-05,
+        "total": 0.00011477
+      },
+      "stop_reason": "end_turn",
+      "text": "周末可以在家做一锅番茄牛腩：先备好牛腩、番茄和洋葱，周六下午慢炖两小时，配米饭吃。",
+      "reasoning_chars": 371
+    },
+    {
+      "name": "intent_cooking_step4",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 2,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 8.64e-05,
+        "total": 0.00012437
+      },
+      "stop_reason": "end_turn",
+      "text": "在家烤一盘饼干。",
+      "reasoning_chars": 636
+    },
+    {
+      "name": "intent_cooking_step5",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 6,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 219,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001314,
+        "total": 0.00016937
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议你花两小时在家烤一盘黄油曲奇：准备好黄油、糖、面粉和鸡蛋，按食谱揉好面团后切成小块烤箱烘烤，成品还能当接下来几天的零食。",
+      "reasoning_chars": 770
+    },
+    {
+      "name": "intent_cooking_step6",
+      "notes": "",
+      "category": "cooking",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 3,
+        "outdoor": 0
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 504,
+        "uncached_input_tokens": 248,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 218,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.72e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0001308,
+        "total": 0.00016877
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议在家烤一盘蔓越莓曲奇，称量、揉面、烘烤约一小时，出炉后正好当下午茶。",
+      "reasoning_chars": 736
+    },
+    {
+      "name": "intent_cooking_summary",
+      "notes": "",
+      "categories": [
+        "cooking",
+        "cooking",
+        "cooking",
+        "cooking",
+        "cooking",
+        "cooking"
+      ],
+      "trials": 6,
+      "exhibition_hits": 0,
+      "cooking_hits": 6,
+      "outdoor_hits": 0,
+      "other_hits": 0
+    },
+    {
+      "name": "intent_cooking_no_tools_step1",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 1
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 94,
+        "uncached_input_tokens": 94,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 169,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.41e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001014,
+        "total": 0.0001155
+      },
+      "stop_reason": "end_turn",
+      "text": "建议周六上午去附近公园走一圈，找张长椅坐着喝杯咖啡，待满一小时再回家。",
+      "reasoning_chars": 229
+    },
+    {
+      "name": "intent_cooking_no_tools_step2",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 94,
+        "uncached_input_tokens": 94,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.41e-05,
+        "input_cache_hit": 0.0,
+        "output": 6.9e-05,
+        "total": 8.31e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近公园散步40分钟。",
+      "reasoning_chars": 402
+    },
+    {
+      "name": "intent_cooking_no_tools_step3",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 94,
+        "uncached_input_tokens": 94,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 95,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.41e-05,
+        "input_cache_hit": 0.0,
+        "output": 5.7e-05,
+        "total": 7.11e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近公园散步30分钟。",
+      "reasoning_chars": 353
+    },
+    {
+      "name": "intent_cooking_no_tools_step4",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 94,
+        "uncached_input_tokens": 94,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 70,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.41e-05,
+        "input_cache_hit": 0.0,
+        "output": 4.2e-05,
+        "total": 5.61e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近公园散步半小时，顺便买杯咖啡。",
+      "reasoning_chars": 232
+    },
+    {
+      "name": "intent_cooking_no_tools_summary",
+      "notes": "",
+      "categories": [
+        "outdoor",
+        "outdoor",
+        "outdoor",
+        "outdoor"
+      ],
+      "trials": 4,
+      "exhibition_hits": 0,
+      "cooking_hits": 0,
+      "outdoor_hits": 4,
+      "other_hits": 0
+    },
+    {
+      "name": "intent_cooking_thinking_off_step1",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 1
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 366,
+        "uncached_input_tokens": 366,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.49e-05,
+        "input_cache_hit": 0.0,
+        "output": 9e-06,
+        "total": 6.39e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六可以在家做一顿想吃的饭，慢慢吃完再出门散步。",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "intent_cooking_thinking_off_step2",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 366,
+        "uncached_input_tokens": 238,
+        "cache_read_input_tokens": 128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.57e-05,
+        "input_cache_hit": 3.8e-07,
+        "output": 9.6e-06,
+        "total": 4.568e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议你去所在城市的公园散步一小时，顺便晒晒太阳放松心情。",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "intent_cooking_thinking_off_step3",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 2
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 366,
+        "uncached_input_tokens": 238,
+        "cache_read_input_tokens": 128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.57e-05,
+        "input_cache_hit": 3.8e-07,
+        "output": 8.4e-06,
+        "total": 4.448e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "周六上午去附近公园散步一小时，顺路买杯咖啡。",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "intent_cooking_thinking_off_step4",
+      "notes": "",
+      "category": "outdoor",
+      "counts": {
+        "exhibition": 0,
+        "cooking": 0,
+        "outdoor": 1
+      },
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 366,
+        "uncached_input_tokens": 238,
+        "cache_read_input_tokens": 128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.57e-05,
+        "input_cache_hit": 3.8e-07,
+        "output": 1.62e-05,
+        "total": 5.228e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "这周末建议你去爬香山：秋天红叶正好，早上出发避开人流，带上水和相机，登顶俯瞰全城。",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "intent_cooking_thinking_off_summary",
+      "notes": "",
+      "categories": [
+        "outdoor",
+        "outdoor",
+        "outdoor",
+        "outdoor"
+      ],
+      "trials": 4,
+      "exhibition_hits": 0,
+      "cooking_hits": 0,
+      "outdoor_hits": 4,
+      "other_hits": 0
+    },
+    {
+      "name": "token_sanity_exhibition",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 497,
+        "uncached_input_tokens": 241,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 96,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.615e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 5.76e-05,
+        "total": 9.452e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "4",
+      "reasoning_chars": 393
+    },
+    {
+      "name": "token_sanity_cooking",
+      "notes": "",
+      "delta_vs_exhibition": 4,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 501,
+        "uncached_input_tokens": 245,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 190,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.675e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.000114,
+        "total": 0.00015152
+      },
+      "stop_reason": "end_turn",
+      "text": "4",
+      "reasoning_chars": 736
+    }
+  ]
+}

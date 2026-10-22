@@ -1,0 +1,377 @@
+{
+  "experiment": "exp5_multiturn_tool_reasoning",
+  "surface": "anthropic",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:46:08.668187+08:00",
+  "cases": [
+    {
+      "name": "turn1_tool_call",
+      "notes": "canary lives only in the reasoning of the tool-call turn",
+      "canary_code": "4F9A2C7E",
+      "attempt": 1,
+      "tool_calls": [
+        {
+          "name": "get_weather",
+          "input": {
+            "city": "Paris",
+            "date": "2025-06-21"
+          }
+        }
+      ],
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 425,
+        "uncached_input_tokens": 425,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1057,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001275,
+        "input_cache_hit": 0.0,
+        "output": 0.0012684,
+        "total": 0.0013959
+      },
+      "stop_reason": "tool_use",
+      "text": "",
+      "reasoning_chars": 4072
+    },
+    {
+      "name": "turn1_final_answer",
+      "notes": "checked: no code leaked into the visible final answer",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 1503,
+        "uncached_input_tokens": 223,
+        "cache_read_input_tokens": 1280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 61,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.69e-05,
+        "input_cache_hit": 7.68e-06,
+        "output": 7.32e-05,
+        "total": 0.00014778
+      },
+      "stop_reason": "end_turn",
+      "text": "巴黎明天天气晴朗，气温约22°C，风力较轻。",
+      "reasoning_chars": 145
+    },
+    {
+      "name": "turn2_tools_trial1",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 1625,
+        "uncached_input_tokens": 217,
+        "cache_read_input_tokens": 1408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 125,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.51e-05,
+        "input_cache_hit": 8.45e-06,
+        "output": 0.00015,
+        "total": 0.00022355
+      },
+      "stop_reason": "end_turn",
+      "text": "4f9a2c7e",
+      "reasoning_chars": 431
+    },
+    {
+      "name": "turn2_tools_trial2",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 1625,
+        "uncached_input_tokens": 217,
+        "cache_read_input_tokens": 1408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 291,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.51e-05,
+        "input_cache_hit": 8.45e-06,
+        "output": 0.0003492,
+        "total": 0.00042275
+      },
+      "stop_reason": "end_turn",
+      "text": "4f9a2c7e",
+      "reasoning_chars": 1252
+    },
+    {
+      "name": "turn2_tools_summary",
+      "notes": "",
+      "hits": 2,
+      "trials": 2,
+      "canary_visible": true
+    },
+    {
+      "name": "turn2_no_tools_trial1",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 283,
+        "uncached_input_tokens": 283,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 225,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 8.49e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.00027,
+        "total": 0.0003549
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 997
+    },
+    {
+      "name": "turn2_no_tools_trial2",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 283,
+        "uncached_input_tokens": 155,
+        "cache_read_input_tokens": 128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 204,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.65e-05,
+        "input_cache_hit": 7.7e-07,
+        "output": 0.0002448,
+        "total": 0.00029207
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 902
+    },
+    {
+      "name": "turn2_no_tools_summary",
+      "notes": "",
+      "hits": 0,
+      "trials": 2,
+      "canary_visible": false
+    },
+    {
+      "name": "turn2_tools_natural_history",
+      "notes": "current request carries tools",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 1588,
+        "uncached_input_tokens": 180,
+        "cache_read_input_tokens": 1408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 161,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.4e-05,
+        "input_cache_hit": 8.45e-06,
+        "output": 0.0001932,
+        "total": 0.00025565
+      },
+      "stop_reason": "tool_use",
+      "text": "",
+      "reasoning_chars": 397
+    },
+    {
+      "name": "turn2_tools_plus_3k_on_tool_reasoning",
+      "notes": "exact billing delta for an earlier tool-turn reasoning block",
+      "delta_input_tokens": 3001,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 4589,
+        "uncached_input_tokens": 3181,
+        "cache_read_input_tokens": 1408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 206,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0009543,
+        "input_cache_hit": 8.45e-06,
+        "output": 0.0002472,
+        "total": 0.00120995
+      },
+      "stop_reason": "tool_use",
+      "text": "",
+      "reasoning_chars": 593
+    },
+    {
+      "name": "turn2_tools_tool_reasoning_stripped",
+      "notes": "",
+      "delta_vs_natural": 997,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 591,
+        "uncached_input_tokens": 207,
+        "cache_read_input_tokens": 384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.21e-05,
+        "input_cache_hit": 2.3e-06,
+        "output": 0.000138,
+        "total": 0.0002024
+      },
+      "stop_reason": "tool_use",
+      "text": "",
+      "reasoning_chars": 202
+    },
+    {
+      "name": "turn2_no_tools_natural_history",
+      "notes": "same history, current request without tools",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 246,
+        "uncached_input_tokens": 246,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 162,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 7.38e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001944,
+        "total": 0.0002682
+      },
+      "stop_reason": "end_turn",
+      "text": "<｜｜DSML｜｜ calls>\n<｜｜DSML｜｜ invoke name=\"get_weather\">\n<｜｜DSML｜｜ parameter name=\"city\" string=\"true\">Hangzhou</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"date\" string=\"true\">2025-06-21</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+      "reasoning_chars": 427
+    },
+    {
+      "name": "turn2_no_tools_plus_3k_on_tool_reasoning",
+      "notes": "",
+      "delta_input_tokens": 0,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 246,
+        "uncached_input_tokens": 246,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 146,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 7.38e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001752,
+        "total": 0.000249
+      },
+      "stop_reason": "end_turn",
+      "text": "<｜｜DSML｜｜ calls>\n<｜｜DSML｜｜ invoke name=\"get_weather\">\n<｜｜DSML｜｜ parameter name=\"city\" string=\"true\">Hangzhou</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"date\" string=\"true\">2025-06-21</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+      "reasoning_chars": 309
+    },
+    {
+      "name": "turn2_no_tools_tool_reasoning_stripped",
+      "notes": "",
+      "delta_vs_natural": 0,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 246,
+        "uncached_input_tokens": 246,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 233,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 7.38e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0002796,
+        "total": 0.0003534
+      },
+      "stop_reason": "end_turn",
+      "text": "<｜｜DSML｜｜ calls>\n<｜｜DSML｜｜ invoke name=\"get_weather\">\n<｜｜DSML｜｜ parameter name=\"city\" string=\"true\">Hangzhou</｜｜DSML｜｜ parameter>\n<｜｜DSML｜｜ parameter name=\"date\" string=\"true\">2025-06-21</｜｜DSML｜｜ parameter>\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+      "reasoning_chars": 678
+    },
+    {
+      "name": "turn2_tools_plus_3k_cached_repeat",
+      "notes": "identical request again; reasoning sits in the cached prefix",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 4589,
+        "uncached_input_tokens": 237,
+        "cache_read_input_tokens": 4352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 143,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 7.11e-05,
+        "input_cache_hit": 2.611e-05,
+        "output": 0.0001716,
+        "total": 0.00026881
+      },
+      "stop_reason": "tool_use",
+      "text": "",
+      "reasoning_chars": 297
+    },
+    {
+      "name": "turn3_tools_replay",
+      "notes": "two user turns after the tool call",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 1952,
+        "uncached_input_tokens": 160,
+        "cache_read_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.8e-05,
+        "input_cache_hit": 1.075e-05,
+        "output": 3.36e-05,
+        "total": 9.235e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "4f9a2c7e",
+      "reasoning_chars": 51
+    },
+    {
+      "name": "turn3_tools_stripped",
+      "notes": "",
+      "delta_vs_replay": 997,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 955,
+        "uncached_input_tokens": 443,
+        "cache_read_input_tokens": 512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001329,
+        "input_cache_hit": 3.07e-06,
+        "output": 3.12e-05,
+        "total": 0.00016717
+      },
+      "stop_reason": "end_turn",
+      "text": "4f9a2c7e",
+      "reasoning_chars": 41
+    }
+  ]
+}

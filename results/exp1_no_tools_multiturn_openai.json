@@ -1,0 +1,217 @@
+{
+  "experiment": "exp1_no_tools_multiturn",
+  "surface": "openai",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:25:29.150732+08:00",
+  "cases": [
+    {
+      "name": "turn1_generate_canary",
+      "notes": "canary must appear only inside reasoning",
+      "canary_code": "7B4E2D19",
+      "attempt": 2,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 92,
+        "uncached_input_tokens": 92,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 178,
+        "reasoning_tokens": 176
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.76e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0002136,
+        "total": 0.0002412
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 692
+    },
+    {
+      "name": "turn2_replay_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 141,
+        "uncached_input_tokens": 141,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 107,
+        "reasoning_tokens": 104
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.23e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001284,
+        "total": 0.0001707
+      },
+      "stop_reason": "stop",
+      "text": "UNKNOWN",
+      "reasoning_chars": 182
+    },
+    {
+      "name": "turn2_stripped_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 144,
+        "uncached_input_tokens": 144,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 103,
+        "reasoning_tokens": 100
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.32e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001236,
+        "total": 0.0001668
+      },
+      "stop_reason": "stop",
+      "text": "UNKNOWN",
+      "reasoning_chars": 522
+    },
+    {
+      "name": "ignored_block_control",
+      "notes": "no tools, no reasoning block",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 54,
+        "uncached_input_tokens": 54,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33,
+        "reasoning_tokens": 31
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.62e-05,
+        "input_cache_hit": 0.0,
+        "output": 3.96e-05,
+        "total": 5.58e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 122
+    },
+    {
+      "name": "ignored_block_replayed",
+      "notes": "no tools; reasoning block should be ignored and unpaid",
+      "delta_input_tokens": 0,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 54,
+        "uncached_input_tokens": 54,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13,
+        "reasoning_tokens": 11
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.62e-05,
+        "input_cache_hit": 0.0,
+        "output": 1.56e-05,
+        "total": 3.18e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 42
+    },
+    {
+      "name": "turn2_ack_replay",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 122,
+        "uncached_input_tokens": 122,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 184,
+        "reasoning_tokens": 158
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0002208,
+        "total": 0.0002574
+      },
+      "stop_reason": "stop",
+      "text": "我理解该练习要求在内部生成并记录随机暗号，最终仅回复 OK，且不透露暗号内容。",
+      "reasoning_chars": 261
+    },
+    {
+      "name": "turn2_ack_stripped",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 123,
+        "uncached_input_tokens": 123,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123,
+        "reasoning_tokens": 101
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.69e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001476,
+        "total": 0.0001845
+      },
+      "stop_reason": "stop",
+      "text": "我理解练习要求：在思考过程中生成并按规定格式记录暗号，最终只回复 OK。",
+      "reasoning_chars": 174
+    },
+    {
+      "name": "turn3_replay_all_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "delta_input_tokens": 1,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 185,
+        "uncached_input_tokens": 185,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_tokens": 141
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.55e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001728,
+        "total": 0.0002283
+      },
+      "stop_reason": "stop",
+      "text": "UNKNOWN",
+      "reasoning_chars": 266
+    },
+    {
+      "name": "turn3_stripped_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 184,
+        "uncached_input_tokens": 184,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 183,
+        "reasoning_tokens": 180
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.52e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0002196,
+        "total": 0.0002748
+      },
+      "stop_reason": "stop",
+      "text": "UNKNOWN",
+      "reasoning_chars": 311
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "experiment": "exp7_thinking_gate",
+  "surface": "openai",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": false,
+  "generated_at": "2026-10-22T18:22:21.876972+08:00",
+  "cases": [
+    {
+      "name": "thinking_on_tools",
+      "notes": "input-token delta caused by the 3.3k-token history reasoning block",
+      "thinking": true,
+      "carries_tools": true,
+      "delta_input_tokens": 3001,
+      "stripped_input_tokens": 339,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 3340,
+        "uncached_input_tokens": 140,
+        "cache_read_input_tokens": 3200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.1e-05,
+        "input_cache_hit": 9.6e-06,
+        "output": 1.2e-06,
+        "total": 3.18e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "thinking_on_no_tools",
+      "notes": "input-token delta caused by the 3.3k-token history reasoning block",
+      "thinking": true,
+      "carries_tools": false,
+      "delta_input_tokens": 0,
+      "stripped_input_tokens": 42,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 42,
+        "uncached_input_tokens": 42,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29,
+        "reasoning_tokens": 27
+      },
+      "cost_usd": {
+        "input_cache_miss": 6.3e-06,
+        "input_cache_hit": 0.0,
+        "output": 1.74e-05,
+        "total": 2.37e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 103
+    },
+    {
+      "name": "thinking_off_tools",
+      "notes": "input-token delta caused by the 3.3k-token history reasoning block",
+      "thinking": false,
+      "carries_tools": true,
+      "delta_input_tokens": 0,
+      "stripped_input_tokens": 314,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 314,
+        "uncached_input_tokens": 186,
+        "cache_read_input_tokens": 128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.79e-05,
+        "input_cache_hit": 3.8e-07,
+        "output": 6e-07,
+        "total": 2.888e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "thinking_off_no_tools",
+      "notes": "input-token delta caused by the 3.3k-token history reasoning block",
+      "thinking": false,
+      "carries_tools": false,
+      "delta_input_tokens": 0,
+      "stripped_input_tokens": 16,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 16,
+        "uncached_input_tokens": 16,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.4e-06,
+        "input_cache_hit": 0.0,
+        "output": 6e-07,
+        "total": 3e-06
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "experiment": "exp1_no_tools_multiturn",
+  "surface": "anthropic",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:24:52.826787+08:00",
+  "cases": [
+    {
+      "name": "turn1_generate_canary",
+      "notes": "canary must appear only inside reasoning",
+      "canary_code": "5F3A9C1D",
+      "attempt": 1,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 93,
+        "uncached_input_tokens": 93,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.79e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.000138,
+        "total": 0.0001659
+      },
+      "stop_reason": "end_turn",
+      "text": "OK",
+      "reasoning_chars": 486
+    },
+    {
+      "name": "turn2_replay_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 143,
+        "uncached_input_tokens": 143,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 205,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.29e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.000246,
+        "total": 0.0002889
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 716
+    },
+    {
+      "name": "turn2_stripped_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 146,
+        "uncached_input_tokens": 146,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 132,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.38e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001584,
+        "total": 0.0002022
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 634
+    },
+    {
+      "name": "turn2_unsigned_replay",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 146,
+        "uncached_input_tokens": 146,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 101,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.38e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001212,
+        "total": 0.000165
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 468
+    },
+    {
+      "name": "ignored_block_control",
+      "notes": "no tools, no reasoning block",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 56,
+        "uncached_input_tokens": 56,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 51,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.68e-05,
+        "input_cache_hit": 0.0,
+        "output": 6.12e-05,
+        "total": 7.8e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "OK",
+      "reasoning_chars": 198
+    },
+    {
+      "name": "ignored_block_replayed",
+      "notes": "no tools; reasoning block should be ignored and unpaid",
+      "delta_input_tokens": 0,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 56,
+        "uncached_input_tokens": 56,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.68e-05,
+        "input_cache_hit": 0.0,
+        "output": 2.16e-05,
+        "total": 3.84e-05
+      },
+      "stop_reason": "end_turn",
+      "text": "OK",
+      "reasoning_chars": 65
+    },
+    {
+      "name": "turn2_ack_replay",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 122,
+        "uncached_input_tokens": 122,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 0.0,
+        "output": 7.56e-05,
+        "total": 0.0001122
+      },
+      "stop_reason": "end_turn",
+      "text": "我理解了这个练习，并会按要求不在回复中透露暗号。",
+      "reasoning_chars": 170
+    },
+    {
+      "name": "turn2_ack_stripped",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 122,
+        "uncached_input_tokens": 122,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 132,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 3.66e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001584,
+        "total": 0.000195
+      },
+      "stop_reason": "end_turn",
+      "text": "我理解该练习的要求，会按要求执行且不会透露暗号内容。",
+      "reasoning_chars": 192
+    },
+    {
+      "name": "turn3_replay_all_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "delta_input_tokens": -2,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 177,
+        "uncached_input_tokens": 177,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.31e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001728,
+        "total": 0.0002259
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 271
+    },
+    {
+      "name": "turn3_stripped_reasoning",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 179,
+        "uncached_input_tokens": 179,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 148,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 5.37e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0001776,
+        "total": 0.0002313
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 256
+    }
+  ]
+}

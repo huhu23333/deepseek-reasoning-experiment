@@ -1,0 +1,231 @@
+{
+  "experiment": "exp4_visibility",
+  "surface": "anthropic",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:32:00.951060+08:00",
+  "cases": [
+    {
+      "name": "canary_generation",
+      "notes": "",
+      "canary_code": "3F9A7C2E",
+      "reasoning_chars": 394,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 92,
+        "uncached_input_tokens": 92,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 105,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.76e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.000126,
+        "total": 0.0001536
+      },
+      "stop_reason": "end_turn",
+      "text": "OK"
+    },
+    {
+      "name": "tools_trial1",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 563,
+        "uncached_input_tokens": 563,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 146,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001689,
+        "input_cache_hit": 0.0,
+        "output": 0.0001752,
+        "total": 0.0003441
+      },
+      "stop_reason": "end_turn",
+      "text": "3f9a7c2e",
+      "reasoning_chars": 545
+    },
+    {
+      "name": "tools_trial2",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 564,
+        "uncached_input_tokens": 564,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001692,
+        "input_cache_hit": 0.0,
+        "output": 7.56e-05,
+        "total": 0.0002448
+      },
+      "stop_reason": "end_turn",
+      "text": "3f9a7c2e",
+      "reasoning_chars": 175
+    },
+    {
+      "name": "tools_trial3",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 564,
+        "uncached_input_tokens": 564,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 97,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001692,
+        "input_cache_hit": 0.0,
+        "output": 0.0001164,
+        "total": 0.0002856
+      },
+      "stop_reason": "end_turn",
+      "text": "3f9a7c2e",
+      "reasoning_chars": 290
+    },
+    {
+      "name": "tools_trial4",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 565,
+        "uncached_input_tokens": 565,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 362,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001695,
+        "input_cache_hit": 0.0,
+        "output": 0.0004344,
+        "total": 0.0006039
+      },
+      "stop_reason": "end_turn",
+      "text": "3f9a7c2e",
+      "reasoning_chars": 1610
+    },
+    {
+      "name": "tools_trial5",
+      "notes": "",
+      "canary_visible": true,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 563,
+        "uncached_input_tokens": 563,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 127,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001689,
+        "input_cache_hit": 0.0,
+        "output": 0.0001524,
+        "total": 0.0003213
+      },
+      "stop_reason": "end_turn",
+      "text": "3f9a7c2e",
+      "reasoning_chars": 563
+    },
+    {
+      "name": "tools_summary",
+      "notes": "",
+      "hits": 5,
+      "trials": 5,
+      "canary_visible": true
+    },
+    {
+      "name": "no_tools_trial1",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 163,
+        "uncached_input_tokens": 163,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 263,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.89e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003156,
+        "total": 0.0003645
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 1244
+    },
+    {
+      "name": "no_tools_trial2",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 163,
+        "uncached_input_tokens": 163,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.89e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.000282,
+        "total": 0.0003309
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 911
+    },
+    {
+      "name": "no_tools_trial3",
+      "notes": "",
+      "canary_visible": false,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 162,
+        "uncached_input_tokens": 162,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 277,
+        "reasoning_tokens": null
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.86e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0003324,
+        "total": 0.000381
+      },
+      "stop_reason": "end_turn",
+      "text": "UNKNOWN",
+      "reasoning_chars": 1161
+    },
+    {
+      "name": "no_tools_summary",
+      "notes": "",
+      "hits": 0,
+      "trials": 3,
+      "canary_visible": false
+    }
+  ]
+}

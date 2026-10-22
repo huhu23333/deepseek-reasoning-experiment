@@ -1,0 +1,613 @@
+{
+  "generated_at": "2026-10-22T19:13:03.065791+08:00",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": false,
+  "per_run": {
+    "exp1_no_tools_multiturn/anthropic": {
+      "cases": 10,
+      "requests_ok": 10,
+      "requests_error": 0,
+      "input_tokens": 1240,
+      "output_tokens": 1109,
+      "cost_usd": 0.0017028
+    },
+    "exp1_no_tools_multiturn/openai": {
+      "cases": 9,
+      "requests_ok": 9,
+      "requests_error": 0,
+      "input_tokens": 1099,
+      "output_tokens": 1068,
+      "cost_usd": 0.0016113
+    },
+    "exp2_tools_multistep/anthropic": {
+      "cases": 18,
+      "requests_ok": 17,
+      "requests_error": 1,
+      "input_tokens": 26114,
+      "output_tokens": 780,
+      "cost_usd": 0.00433021
+    },
+    "exp2_tools_multistep/openai": {
+      "cases": 13,
+      "requests_ok": 12,
+      "requests_error": 1,
+      "input_tokens": 10348,
+      "output_tokens": 1068,
+      "cost_usd": 0.00348284
+    },
+    "exp3_billing/anthropic": {
+      "cases": 9,
+      "requests_ok": 9,
+      "requests_error": 0,
+      "input_tokens": 10706,
+      "output_tokens": 320,
+      "cost_usd": 0.00257974
+    },
+    "exp3_billing/openai": {
+      "cases": 9,
+      "requests_ok": 9,
+      "requests_error": 0,
+      "input_tokens": 10704,
+      "output_tokens": 307,
+      "cost_usd": 0.00256354
+    },
+    "exp4_visibility/anthropic": {
+      "cases": 9,
+      "requests_ok": 9,
+      "requests_error": 0,
+      "input_tokens": 3399,
+      "output_tokens": 1675,
+      "cost_usd": 0.0030297
+    },
+    "exp4_visibility/openai": {
+      "cases": 9,
+      "requests_ok": 9,
+      "requests_error": 0,
+      "input_tokens": 3793,
+      "output_tokens": 2751,
+      "cost_usd": 0.0044391
+    },
+    "exp5_multiturn_tool_reasoning/anthropic": {
+      "cases": 15,
+      "requests_ok": 15,
+      "requests_error": 0,
+      "input_tokens": 20746,
+      "output_tokens": 3183,
+      "cost_usd": 0.00590388
+    },
+    "exp5_multiturn_tool_reasoning/openai": {
+      "cases": 15,
+      "requests_ok": 15,
+      "requests_error": 0,
+      "input_tokens": 15807,
+      "output_tokens": 1962,
+      "cost_usd": 0.00434937
+    },
+    "exp6_completed_answer_reasoning/anthropic": {
+      "cases": 14,
+      "requests_ok": 14,
+      "requests_error": 0,
+      "input_tokens": 12330,
+      "output_tokens": 1704,
+      "cost_usd": 0.00389982
+    },
+    "exp6_completed_answer_reasoning/openai": {
+      "cases": 14,
+      "requests_ok": 14,
+      "requests_error": 0,
+      "input_tokens": 11736,
+      "output_tokens": 1455,
+      "cost_usd": 0.00353572
+    },
+    "exp7_thinking_gate/anthropic": {
+      "cases": 4,
+      "requests_ok": 4,
+      "requests_error": 0,
+      "input_tokens": 3712,
+      "output_tokens": 29,
+      "cost_usd": 0.00053656
+    },
+    "exp7_thinking_gate/openai": {
+      "cases": 4,
+      "requests_ok": 4,
+      "requests_error": 0,
+      "input_tokens": 3712,
+      "output_tokens": 33,
+      "cost_usd": 8.738e-05
+    },
+    "exp8_reasoning_tamper/anthropic": {
+      "cases": 31,
+      "requests_ok": 31,
+      "requests_error": 0,
+      "input_tokens": 15849,
+      "output_tokens": 4877,
+      "cost_usd": 0.00408049
+    },
+    "exp8_reasoning_tamper/openai": {
+      "cases": 31,
+      "requests_ok": 31,
+      "requests_error": 0,
+      "input_tokens": 16509,
+      "output_tokens": 4985,
+      "cost_usd": 0.00398095
+    },
+    "exp9_intent_injection/anthropic": {
+      "cases": 29,
+      "requests_ok": 29,
+      "requests_error": 0,
+      "input_tokens": 11765,
+      "output_tokens": 4521,
+      "cost_usd": 0.00370592
+    },
+    "exp9_intent_injection/openai": {
+      "cases": 29,
+      "requests_ok": 29,
+      "requests_error": 0,
+      "input_tokens": 11185,
+      "output_tokens": 4512,
+      "cost_usd": 0.00361352
+    }
+  },
+  "grand_total": {
+    "requests": 272,
+    "errors": 2,
+    "input_tokens": 190754,
+    "output_tokens": 36339,
+    "cost_usd": 0.05743284
+  },
+  "metrics": {
+    "ignored_vs_billed": {
+      "anthropic": {
+        "no_tools_ignored_block_delta_input_tokens": 0,
+        "tools_included_block_delta_input_tokens": 3001,
+        "block_chars": 13500,
+        "no_tools_block_chars": 13500
+      },
+      "openai": {
+        "no_tools_ignored_block_delta_input_tokens": 0,
+        "tools_included_block_delta_input_tokens": 3001,
+        "block_chars": 13500,
+        "no_tools_block_chars": 13500
+      }
+    },
+    "cache": {
+      "anthropic": {
+        "first_input_tokens": 3351,
+        "first_cost_usd": 0.0010077,
+        "second_input_tokens": 3351,
+        "second_cost_usd": 6.69e-05,
+        "second_cache_hit_tokens": 3200
+      },
+      "openai": {
+        "first_input_tokens": 3351,
+        "first_cost_usd": 0.0010077,
+        "second_input_tokens": 3351,
+        "second_cost_usd": 6.69e-05,
+        "second_cache_hit_tokens": 3200
+      }
+    },
+    "visibility": {
+      "anthropic": {
+        "with_tools_hits": 5,
+        "with_tools_trials": 5,
+        "no_tools_hits": 0,
+        "no_tools_trials": 3,
+        "canary_code": "3F9A7C2E"
+      },
+      "openai": {
+        "with_tools_hits": 4,
+        "with_tools_trials": 5,
+        "no_tools_hits": 0,
+        "no_tools_trials": 3,
+        "canary_code": "3F9A7C2E"
+      }
+    },
+    "missing_reasoning_errors": {
+      "anthropic": {
+        "ok": false,
+        "status": 400,
+        "error": "{\"error\":{\"message\":\"The `content[].thinking` in the thinking mode must be passed back to the API. (request_id: 96e290ed-b506-4790-8b5f-eaaa58a34125)\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      },
+      "openai": {
+        "ok": false,
+        "status": 400,
+        "error": "{\"error\":{\"message\":\"The `reasoning_content` in the thinking mode must be passed back to the API. (request_id: 27348b4e-8230-4700-ad74-022b9db20518)\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      }
+    },
+    "signature": {
+      "anthropic": {
+        "signature_signed": {
+          "ok": true,
+          "input_tokens": 3350
+        },
+        "signature_absent": {
+          "ok": true,
+          "input_tokens": 3350
+        },
+        "signature_bogus": {
+          "ok": true,
+          "input_tokens": 3350
+        },
+        "signature_empty": {
+          "ok": true,
+          "input_tokens": 3350
+        },
+        "signature_tampered_text": {
+          "ok": true,
+          "input_tokens": 3354
+        }
+      }
+    },
+    "generated_reasoning_output": {
+      "anthropic": {
+        "output_tokens": 147,
+        "reasoning_chars": 565,
+        "reported_reasoning_tokens": null,
+        "cost_usd": 0.0002037
+      },
+      "openai": {
+        "output_tokens": 214,
+        "reasoning_chars": 899,
+        "reported_reasoning_tokens": 212,
+        "cost_usd": 0.0002841
+      }
+    },
+    "multiturn_tool_reasoning": {
+      "anthropic": {
+        "turn2_with_tools_hits": 2,
+        "turn2_with_tools_trials": 2,
+        "turn2_no_tools_hits": 0,
+        "turn2_no_tools_trials": 2,
+        "appended_block_delta_with_tools": 3001,
+        "tool_reasoning_input_tokens_with_tools": 997,
+        "appended_block_delta_no_tools": 0,
+        "tool_reasoning_input_tokens_no_tools": 0,
+        "turn2_with_tools_input_tokens": 1588,
+        "turn2_with_tools_stripped_input_tokens": 591,
+        "cached_repeat_input_tokens": 4589,
+        "cached_repeat_hit_tokens": 4352,
+        "turn3_canary_visible": true,
+        "turn3_delta_vs_stripped": 997
+      },
+      "openai": {
+        "turn2_with_tools_hits": 2,
+        "turn2_with_tools_trials": 2,
+        "turn2_no_tools_hits": 0,
+        "turn2_no_tools_trials": 2,
+        "appended_block_delta_with_tools": 3001,
+        "tool_reasoning_input_tokens_with_tools": 351,
+        "appended_block_delta_no_tools": 0,
+        "tool_reasoning_input_tokens_no_tools": 0,
+        "turn2_with_tools_input_tokens": 935,
+        "turn2_with_tools_stripped_input_tokens": 584,
+        "cached_repeat_input_tokens": 3936,
+        "cached_repeat_hit_tokens": 3712,
+        "turn3_canary_visible": true,
+        "turn3_delta_vs_stripped": 351
+      }
+    },
+    "completed_answer_reasoning": {
+      "anthropic": {
+        "turn2_with_tools_hits": 2,
+        "turn2_with_tools_trials": 2,
+        "turn2_no_tools_hits": 0,
+        "turn2_no_tools_trials": 2,
+        "appended_block_delta_with_tools": 3001,
+        "completed_reasoning_input_tokens_with_tools": 123,
+        "appended_block_delta_no_tools": 0,
+        "completed_reasoning_input_tokens_no_tools": 0,
+        "turn3_canary_visible": true,
+        "turn3_delta_vs_stripped": 123,
+        "cached_repeat_input_tokens": 3548,
+        "cached_repeat_hit_tokens": 3328
+      },
+      "openai": {
+        "turn2_with_tools_hits": 2,
+        "turn2_with_tools_trials": 2,
+        "turn2_no_tools_hits": 0,
+        "turn2_no_tools_trials": 2,
+        "appended_block_delta_with_tools": 3001,
+        "completed_reasoning_input_tokens_with_tools": 122,
+        "appended_block_delta_no_tools": 0,
+        "completed_reasoning_input_tokens_no_tools": 0,
+        "turn3_canary_visible": true,
+        "turn3_delta_vs_stripped": 122,
+        "cached_repeat_input_tokens": 3552,
+        "cached_repeat_hit_tokens": 3328
+      }
+    },
+    "thinking_gate": {
+      "anthropic": {
+        "thinking_on_tools": {
+          "ok": true,
+          "thinking": true,
+          "carries_tools": true,
+          "delta_input_tokens": 3001
+        },
+        "thinking_on_no_tools": {
+          "ok": true,
+          "thinking": true,
+          "carries_tools": false,
+          "delta_input_tokens": 0
+        },
+        "thinking_off_tools": {
+          "ok": true,
+          "thinking": false,
+          "carries_tools": true,
+          "delta_input_tokens": 0
+        },
+        "thinking_off_no_tools": {
+          "ok": true,
+          "thinking": false,
+          "carries_tools": false,
+          "delta_input_tokens": 0
+        }
+      },
+      "openai": {
+        "thinking_on_tools": {
+          "ok": true,
+          "thinking": true,
+          "carries_tools": true,
+          "delta_input_tokens": 3001
+        },
+        "thinking_on_no_tools": {
+          "ok": true,
+          "thinking": true,
+          "carries_tools": false,
+          "delta_input_tokens": 0
+        },
+        "thinking_off_tools": {
+          "ok": true,
+          "thinking": false,
+          "carries_tools": true,
+          "delta_input_tokens": 0
+        },
+        "thinking_off_no_tools": {
+          "ok": true,
+          "thinking": false,
+          "carries_tools": false,
+          "delta_input_tokens": 0
+        }
+      }
+    },
+    "reasoning_tamper": {
+      "anthropic": {
+        "original_code": "A3F09B7C",
+        "modified_code": "DFB5C3A4",
+        "original_hits": 6,
+        "original_trials": 6,
+        "modified_hits": 6,
+        "modified_trials": 6,
+        "stripped_hits": 0,
+        "stripped_trials": 4,
+        "stripped_picks": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "no_tools_picks": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "thinking_off_picks": [
+          "C2680CCF",
+          "A3F09B7C",
+          "DFB5C3A4",
+          "A3F09B7C"
+        ],
+        "no_signature_hits": 4,
+        "no_signature_trials": 4,
+        "token_original": 592,
+        "token_modified": 593,
+        "token_delta": 1
+      },
+      "openai": {
+        "original_code": "3F9A2C7D",
+        "modified_code": "13FC05BC",
+        "original_hits": 6,
+        "original_trials": 6,
+        "modified_hits": 6,
+        "modified_trials": 6,
+        "stripped_hits": 0,
+        "stripped_trials": 4,
+        "stripped_picks": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "no_tools_picks": [
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        "thinking_off_picks": [
+          "3F9A2C7D",
+          "13FC05BC",
+          "2E9C1636",
+          "13FC05BC"
+        ],
+        "no_signature_hits": 4,
+        "no_signature_trials": 4,
+        "token_original": 634,
+        "token_modified": 630,
+        "token_delta": -4
+      }
+    },
+    "intent_injection": {
+      "anthropic": {
+        "no_intent": {
+          "name": "no_intent_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 6,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 6,
+          "other_hits": 0
+        },
+        "intent_exhibition": {
+          "name": "intent_exhibition_summary",
+          "notes": "",
+          "categories": [
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition"
+          ],
+          "trials": 6,
+          "exhibition_hits": 6,
+          "cooking_hits": 0,
+          "outdoor_hits": 0,
+          "other_hits": 0
+        },
+        "intent_cooking": {
+          "name": "intent_cooking_summary",
+          "notes": "",
+          "categories": [
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking"
+          ],
+          "trials": 6,
+          "exhibition_hits": 0,
+          "cooking_hits": 6,
+          "outdoor_hits": 0,
+          "other_hits": 0
+        },
+        "intent_cooking_no_tools": {
+          "name": "intent_cooking_no_tools_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 4,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 4,
+          "other_hits": 0
+        },
+        "intent_cooking_thinking_off": {
+          "name": "intent_cooking_thinking_off_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 4,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 4,
+          "other_hits": 0
+        },
+        "token_delta": 4
+      },
+      "openai": {
+        "no_intent": {
+          "name": "no_intent_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 6,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 6,
+          "other_hits": 0
+        },
+        "intent_exhibition": {
+          "name": "intent_exhibition_summary",
+          "notes": "",
+          "categories": [
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition",
+            "exhibition"
+          ],
+          "trials": 6,
+          "exhibition_hits": 6,
+          "cooking_hits": 0,
+          "outdoor_hits": 0,
+          "other_hits": 0
+        },
+        "intent_cooking": {
+          "name": "intent_cooking_summary",
+          "notes": "",
+          "categories": [
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking",
+            "cooking"
+          ],
+          "trials": 6,
+          "exhibition_hits": 0,
+          "cooking_hits": 6,
+          "outdoor_hits": 0,
+          "other_hits": 0
+        },
+        "intent_cooking_no_tools": {
+          "name": "intent_cooking_no_tools_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 4,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 4,
+          "other_hits": 0
+        },
+        "intent_cooking_thinking_off": {
+          "name": "intent_cooking_thinking_off_summary",
+          "notes": "",
+          "categories": [
+            "outdoor",
+            "outdoor",
+            "outdoor",
+            "outdoor"
+          ],
+          "trials": 4,
+          "exhibition_hits": 0,
+          "cooking_hits": 0,
+          "outdoor_hits": 4,
+          "other_hits": 0
+        },
+        "token_delta": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "experiment": "exp3_billing",
+  "surface": "openai",
+  "model": "deepseek-flash",
+  "effort": "high",
+  "peak": true,
+  "generated_at": "2026-10-22T16:32:57.515561+08:00",
+  "cases": [
+    {
+      "name": "no_tools_control",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 51,
+        "uncached_input_tokens": 51,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13,
+        "reasoning_tokens": 11
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.53e-05,
+        "input_cache_hit": 0.0,
+        "output": 1.56e-05,
+        "total": 3.09e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 42
+    },
+    {
+      "name": "no_tools_large_reasoning",
+      "notes": "",
+      "delta_input_tokens": 0,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 51,
+        "uncached_input_tokens": 51,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24,
+        "reasoning_tokens": 22
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.53e-05,
+        "input_cache_hit": 0.0,
+        "output": 2.88e-05,
+        "total": 4.41e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 84
+    },
+    {
+      "name": "tools_control",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 352,
+        "uncached_input_tokens": 352,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0001056,
+        "input_cache_hit": 0.0,
+        "output": 2.4e-06,
+        "total": 0.000108
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "tools_large_reasoning",
+      "notes": "",
+      "delta_input_tokens": 3001,
+      "large_block_chars": 13500,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 3353,
+        "uncached_input_tokens": 3097,
+        "cache_read_input_tokens": 256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0009291,
+        "input_cache_hit": 1.54e-06,
+        "output": 2.4e-06,
+        "total": 0.00093304
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "generated_reasoning_output",
+      "notes": "reasoning tokens are part of the billed completion tokens",
+      "reasoning_chars": 899,
+      "output_tokens": 214,
+      "reported_reasoning_tokens": 212,
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 91,
+        "uncached_input_tokens": 91,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 214,
+        "reasoning_tokens": 212
+      },
+      "cost_usd": {
+        "input_cache_miss": 2.73e-05,
+        "input_cache_hit": 0.0,
+        "output": 0.0002568,
+        "total": 0.0002841
+      },
+      "stop_reason": "stop",
+      "text": "OK"
+    },
+    {
+      "name": "cache_first",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 3351,
+        "uncached_input_tokens": 3351,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 0.0010053,
+        "input_cache_hit": 0.0,
+        "output": 2.4e-06,
+        "total": 0.0010077
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "cache_second",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 3351,
+        "uncached_input_tokens": 151,
+        "cache_read_input_tokens": 3200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 0
+      },
+      "cost_usd": {
+        "input_cache_miss": 4.53e-05,
+        "input_cache_hit": 1.92e-05,
+        "output": 2.4e-06,
+        "total": 6.69e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 0
+    },
+    {
+      "name": "ignored_cache_first",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 52,
+        "uncached_input_tokens": 52,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32,
+        "reasoning_tokens": 30
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.56e-05,
+        "input_cache_hit": 0.0,
+        "output": 3.84e-05,
+        "total": 5.4e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 116
+    },
+    {
+      "name": "ignored_cache_second",
+      "notes": "",
+      "ok": true,
+      "usage": {
+        "total_input_tokens": 52,
+        "uncached_input_tokens": 52,
+        "cache_read_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16,
+        "reasoning_tokens": 14
+      },
+      "cost_usd": {
+        "input_cache_miss": 1.56e-05,
+        "input_cache_hit": 0.0,
+        "output": 1.92e-05,
+        "total": 3.48e-05
+      },
+      "stop_reason": "stop",
+      "text": "OK",
+      "reasoning_chars": 52
+    }
+  ]
+}

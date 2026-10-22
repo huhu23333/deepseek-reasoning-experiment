@@ -1,0 +1,73 @@
+{
+  "surface": "anthropic",
+  "system": "exp9-parallel-f74bb723aa28",
+  "prompt": "请先在思考里算一下 1+1 等于几，然后回答。最终回答只输出数字。（会话标记 801daf）",
+  "reasoning": "We need answer only number. Need \"先在思考里算一下\" but must not reveal chain? We can think 1+1=2. Final only digit.",
+  "answer": "2",
+  "counts": {
+    "no_intent": {
+      "exhibition": 7,
+      "cooking": 2,
+      "outdoor": 982,
+      "other": 9
+    },
+    "intent_exhibition": {
+      "exhibition": 979,
+      "cooking": 0,
+      "outdoor": 0,
+      "other": 21
+    },
+    "intent_cooking": {
+      "exhibition": 0,
+      "cooking": 932,
+      "outdoor": 4,
+      "other": 64
+    },
+    "intent_cooking_no_tools": {
+      "exhibition": 3,
+      "cooking": 1,
+      "outdoor": 987,
+      "other": 9
+    },
+    "intent_cooking_thinking_off": {
+      "exhibition": 62,
+      "cooking": 1,
+      "outdoor": 840,
+      "other": 97
+    }
+  },
+  "failures": {
+    "no_intent": 0,
+    "intent_exhibition": 0,
+    "intent_cooking": 0,
+    "intent_cooking_no_tools": 0,
+    "intent_cooking_thinking_off": 0
+  },
+  "usage_totals": {
+    "no_intent": {
+      "input": 425000,
+      "output": 107837,
+      "hit": 255744
+    },
+    "intent_exhibition": {
+      "input": 453000,
+      "output": 198505,
+      "hit": 256000
+    },
+    "intent_cooking": {
+      "input": 457000,
+      "output": 209921,
+      "hit": 256000
+    },
+    "intent_cooking_no_tools": {
+      "input": 93000,
+      "output": 121030,
+      "hit": 0
+    },
+    "intent_cooking_thinking_off": {
+      "input": 365000,
+      "output": 15702,
+      "hit": 127744
+    }
+  }
+}
